@@ -1,0 +1,43 @@
+/* Common helper directives for re-usable css patterns*/
+
+.h-flex-row() {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  & > {
+    min-width: 0;
+  }
+}
+
+.h-flex-row-stretch() {
+  .h-flex-row();
+  align-items: stretch;
+}
+
+.h-flex-col() {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  & > {
+    min-height: 0;
+  }
+}
+
+.h-flex-col-stretch() {
+  .h-flex-col();
+  align-items: stretch;
+}
+
+
+.h-flex-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    & > * {
+        min-height: 0;
+    }
+}
+

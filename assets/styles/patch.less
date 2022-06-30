@@ -1,0 +1,14 @@
+/* Patches for third party UI */
+
+@import (reference) './vars.less';
+
+/* Patch flatpickr theme */
+.flatpickr-day.selected,
+.flatpickr-day.selected:hover,
+.flatpickr-day.selected:focus {
+  background-color: @theme-var-accent-color;
+  border-color: unset !important;
+}
+.flatpickr-day {
+  border: none !important;
+}

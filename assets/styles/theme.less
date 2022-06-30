@@ -1,0 +1,63 @@
+/* Common theme for native elements */
+@import (reference) './vars.less';
+
+::selection {
+  background-color: @theme-var-accent-color;
+  color: #fff;
+}
+
+.mi {
+  color: @theme-var-accent-color;;
+}
+
+a {
+  color: @theme-var-accent-color;;
+}
+
+input {
+  border-width:0px;
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-radius: @theme-var-border-radius;
+  border-image: radial-gradient(ellipse 60% 1px at bottom, @theme-var-border-color, transparent) 1;
+  background: radial-gradient(ellipse at bottom, #fff, transparent);
+  padding: 4px;
+  color: @theme-var-foreground-color;
+}
+
+button,
+input[type="submit"] {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: @theme-var-border-radius;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+  background: radial-gradient(ellipse 150% 50% at top, #fff, transparent),#00000005;
+  color: @theme-var-accent-color;
+  padding: 6px;
+  box-shadow: 0px 1px 4px 0px #ccc;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: radial-gradient(ellipse 150% 50% at top, #fff, transparent),#ffffff05;
+}
+
+.btn-icon {
+  border: none;
+  background: none;
+  background-color: transparent;
+  border-radius: @theme-var-border-radius;
+  cursor: pointer;
+  box-shadow:none;
+  padding: 0;
+}
+
+input:focus,
+button:focus {
+  outline: 1px solid @theme-var-accent-color;
+}

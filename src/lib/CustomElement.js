@@ -5,7 +5,7 @@ import '../../deps/less/less.min.js';
  * Turn off less.js noise
  */
 less.options.logLevel = 0;
-const COMMON_STYLES = ['theme.less', 'ce.less'].map(s => less.render(`@import "/assets/styles/${s}";`, { filename: s }));
+const COMMON_STYLES = ['theme.less', 'ce.less'].map(s => less.render(`@import "./assets/styles/${s}";`, { filename: s }));
 
 /**
  * A minimal custom component implementation.
